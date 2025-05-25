@@ -13,7 +13,7 @@ def string_derivation(word, target, P, Sigma, N, steps):
             for p in P[word[i]]: # parcurgem productiile
                 new_word = word[: i] + p + word[i + 1 :] # inlocuim neterminalul cu productia curenta
                 if string_derivation(new_word, target, P, Sigma, N, steps): # verificam daca se poate obtine cuvantul curent
-                    steps.insert(0, new_word) # adaugam cuvantul in lista derivarii
+                    steps.append(new_word) # adaugam cuvantul in lista derivarii
                     return True
             break
 
@@ -23,6 +23,8 @@ def derivation(target, G):
     N, Sigma, P, S = G
     steps = []
     found = string_derivation(S, target, P, Sigma, N, steps)
+    steps.append(S)
+    steps.reverse()
     if found:
         print(f"Derivare pentru '{target}': ", end = "")
         print(*steps, sep=', ')

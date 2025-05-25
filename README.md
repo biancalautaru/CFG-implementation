@@ -27,21 +27,21 @@ Acest proiect are 4 componente principale:
 ```
 task 1: ({'S'}, {'b', 'a'}, {'S': {'', 'aSb'}}, 'S')
 
-task 2: ['aabb', 'aaabbb', 'aaaabbbb', 'aaaaabbbbb', 'ab', '']
+task 2: ['aaaabbbb', 'aaaaabbbbb', 'aaabbb', 'aabb', 'ab', '']
 
 task 3:
-Derivare pentru 'aabb': aSb, aaSbb, aabb
-Derivare pentru 'aaabbb': aSb, aaSbb, aaaSbbb, aaabbb
-Derivare pentru 'aaaabbbb': aSb, aaSbb, aaaSbbb, aaaaSbbbb, aaaabbbb
-Derivare pentru 'aaaaabbbbb': aSb, aaSbb, aaaSbbb, aaaaSbbbb, aaaaaSbbbbb, aaaaabbbbb
-Derivare pentru 'ab': aSb, ab
-Derivare pentru '': 
+Derivare pentru 'aaaabbbb': S, aSb, aaSbb, aaaSbbb, aaaaSbbbb, aaaabbbb
+Derivare pentru 'aaaaabbbbb': S, aSb, aaSbb, aaaSbbb, aaaaSbbbb, aaaaaSbbbbb, aaaaabbbbb
+Derivare pentru 'aaabbb': S, aSb, aaSbb, aaaSbbb, aaabbb
+Derivare pentru 'aabb': S, aSb, aaSbb, aabb
+Derivare pentru 'ab': S, aSb, ab
+Derivare pentru '': S, 
 
 task 4:
-'aabb' apartine gramaticii.
-'aaabbb' apartine gramaticii.
 'aaaabbbb' apartine gramaticii.
 'aaaaabbbbb' apartine gramaticii.
+'aaabbb' apartine gramaticii.
+'aabb' apartine gramaticii.
 'ab' apartine gramaticii.
 '' apartine gramaticii.
 'aabbbb' nu apartine gramaticii.
