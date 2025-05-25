@@ -6,8 +6,9 @@ Acest proiect are 4 componente principale:
 - un **generator de cuvinte** ce fac parte din această gramatică
   - Generatorul creează maxim 10 cuvinte de lungime maximă 10.
 - o funcție ce afișează pașii de **derivare a unui cuvânt dat**
-  - Sunt afișate cuvintele obținute prin aplicarea succesivă a producțiilor până la obținerea cuvântului dorit.
+  - Sunt afișate cuvintele obținute prin aplicarea succesivă a producțiilor de la simbolul de start până la obținerea cuvântului dorit.
 - o funcție ce testează **dacă un cuvânt face sau nu parte din gramatica dată**.
+
 
 ## 💻 Rulare
 
@@ -20,7 +21,6 @@ Acest proiect are 4 componente principale:
    python3 main.py
    ```
 
----
 
 ## 📖 Exemplu output
 
